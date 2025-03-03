@@ -1,0 +1,73 @@
+<mxfile host="65bd71144e">
+    <diagram id="_HJ3-rgDhklRMeSUqbfm" name="Page-1">
+        <mxGraphModel dx="1434" dy="1909" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="2" value="main.py" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="70" y="100" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="3" value="" style="endArrow=classic;html=1;" edge="1" parent="1" source="2" target="4">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="190" y="120" as="sourcePoint"/>
+                        <mxPoint x="280" y="80" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="4" value="&lt;font style=&quot;color: rgb(255, 255, 255);&quot;&gt;&lt;b style=&quot;background-color: light-dark(#ffffff, var(--ge-dark-color, #121212));&quot;&gt;def ejecutar cambios ()&lt;/b&gt;&lt;/font&gt;&lt;div&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;div&gt;&lt;font style=&quot;color: rgb(255, 255, 255);&quot;&gt;-&lt;span&gt;&amp;nbsp;- Contiene def&lt;/span&gt;&lt;/font&gt; &lt;b&gt;&lt;font style=&quot;background-color: rgb(0, 204, 0);&quot;&gt;buscar_y_reemplazar_en_word&lt;/font&gt;&lt;/b&gt;( archivo_word, diccionario_completo)&lt;/div&gt;&lt;div&gt;- Los argumentos que son archivos vienen del modulo datos_centrales.py&lt;/div&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+                    <mxGeometry x="281" y="40" width="250" height="180" as="geometry"/>
+                </mxCell>
+                <mxCell id="5" value="&lt;b style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;def crear interfaz ()&lt;/b&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;- Boton: elegir archivo word, command=&lt;b style=&quot;background-color: rgb(0, 204, 0);&quot;&gt;seleccionar word&lt;/b&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;- Botón crear diccionario, command=&lt;b style=&quot;background-color: rgb(0, 204, 0);&quot;&gt;VentanaFormulario&lt;/b&gt;&lt;/div&gt;&lt;div&gt;- Botón ejecutar cambios, command=&lt;b style=&quot;background-color: rgb(0, 204, 0);&quot;&gt;ejecutar cambios&lt;/b&gt;&lt;/div&gt;&lt;div&gt;Botón salir,&amp;nbsp;command=&lt;b style=&quot;background-color: rgb(0, 204, 0);&quot;&gt;ventana.destroy&lt;/b&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+                    <mxGeometry x="20" y="260" width="280" height="190" as="geometry"/>
+                </mxCell>
+                <mxCell id="6" value="" style="endArrow=classic;html=1;exitX=0.333;exitY=0.95;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="2" target="5">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="84.5" y="200" as="sourcePoint"/>
+                        <mxPoint x="175.5" y="200" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="8" value="datos_centrales.py&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;div&gt;- archivo word = None&lt;/div&gt;&lt;div&gt;- diccionario_completo = {}&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="30" y="490" width="260" height="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="16" value="formulario_datos.py" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="10" y="810" width="130" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="17" value="&lt;b style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;class VentanaFormulario&lt;/b&gt;&lt;div&gt;- &lt;i&gt;&lt;b&gt;def init&lt;/b&gt;&lt;/i&gt; (). Creamos self.diccionario&amp;nbsp; y self.crear_ventana&lt;/div&gt;&lt;div&gt;- &lt;b&gt;&lt;i&gt;def crear ventana &lt;/i&gt;().&lt;/b&gt; Crea la ventana con las etiquetas de los datos y crea las variables donde se recogeran y se transformarán en un dict&lt;/div&gt;&lt;div&gt;Se crea también boton guardar, &lt;u&gt;&lt;i&gt;coomand=guardar datos&lt;/i&gt;&lt;/u&gt;&lt;/div&gt;&lt;div&gt;- &lt;b&gt;&lt;i&gt;def guardar_datos ()&lt;/i&gt;.&lt;/b&gt; Creamos el self.diccionario y luego se lo pasamos a datos_centrales.diccionario_completo. Su botón se ha creado en def crear ventana&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+                    <mxGeometry x="200" y="800" width="490" height="230" as="geometry"/>
+                </mxCell>
+                <mxCell id="18" value="" style="endArrow=classic;html=1;" edge="1" parent="1" source="16" target="17">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="145" y="860" as="sourcePoint"/>
+                        <mxPoint x="190" y="863" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="19" value="buscador_palabra_word.py" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="32.5" y="1130" width="195" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="20" value="" style="endArrow=classic;html=1;" edge="1" parent="1" source="19" target="21">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="240" y="1120" as="sourcePoint"/>
+                        <mxPoint x="290" y="1070" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="260" y="1140"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="21" value="&lt;b style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;def reemplazar_en_runs (runs, palabras_reemplazo)&lt;/b&gt;&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;div&gt;Args:&lt;/div&gt;&lt;div&gt;- runs: list de runs del párrafo o celda&lt;/div&gt;&lt;div&gt;- palabras_reemplazo: dict con las palabras que vamos a reemplazar&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+                    <mxGeometry x="281" y="1060" width="429" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="22" value="&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;b style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;def buscar_y_reemplazar_en_words (ruta_archivo, diccionario):&lt;/b&gt;&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;div&gt;- Busca palabras en un word y las reemplaza. Lo realiza en párrafos y tablas y preserva el formato original&lt;/div&gt;&lt;div&gt;- Dentro se llama dos veces a la def reemplazar runs. Una vez para los&amp;nbsp; párrafos y otra vez paras las tablas&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+                    <mxGeometry x="270" y="1190" width="429" height="220" as="geometry"/>
+                </mxCell>
+                <mxCell id="24" value="" style="endArrow=classic;html=1;entryX=0.072;entryY=0.011;entryDx=0;entryDy=0;entryPerimeter=0;exitX=1;exitY=0.75;exitDx=0;exitDy=0;" edge="1" parent="1" source="19" target="22">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="260" y="1170" as="sourcePoint"/>
+                        <mxPoint x="450" y="1270" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="30" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;Buscar y sustituir palabras Word&lt;/h1&gt;&lt;p&gt;Contiene 4 archivo .py:&lt;/p&gt;&lt;p&gt;&lt;b&gt;1- main&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;2- datos centrales&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b style=&quot;background-color: transparent;&quot;&gt;3- formulario datos&lt;/b&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;4- buscador palabra word&lt;/b&gt;&lt;/p&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="10" y="-190" width="250" height="250" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
